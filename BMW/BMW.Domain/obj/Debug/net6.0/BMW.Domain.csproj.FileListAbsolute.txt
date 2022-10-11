@@ -1,0 +1,12 @@
+D:\BMW\BMW\BMW.Domain\bin\Debug\net6.0\BMW.Domain.deps.json
+D:\BMW\BMW\BMW.Domain\bin\Debug\net6.0\BMW.Domain.dll
+D:\BMW\BMW\BMW.Domain\bin\Debug\net6.0\BMW.Domain.pdb
+D:\BMW\BMW\BMW.Domain\obj\Debug\net6.0\BMW.Domain.csproj.AssemblyReference.cache
+D:\BMW\BMW\BMW.Domain\obj\Debug\net6.0\BMW.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\BMW\BMW\BMW.Domain\obj\Debug\net6.0\BMW.Domain.AssemblyInfoInputs.cache
+D:\BMW\BMW\BMW.Domain\obj\Debug\net6.0\BMW.Domain.AssemblyInfo.cs
+D:\BMW\BMW\BMW.Domain\obj\Debug\net6.0\BMW.Domain.csproj.CoreCompileInputs.cache
+D:\BMW\BMW\BMW.Domain\obj\Debug\net6.0\BMW.Domain.dll
+D:\BMW\BMW\BMW.Domain\obj\Debug\net6.0\refint\BMW.Domain.dll
+D:\BMW\BMW\BMW.Domain\obj\Debug\net6.0\BMW.Domain.pdb
+D:\BMW\BMW\BMW.Domain\obj\Debug\net6.0\ref\BMW.Domain.dll

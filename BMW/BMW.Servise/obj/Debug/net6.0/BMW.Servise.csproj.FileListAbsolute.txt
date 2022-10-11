@@ -1,0 +1,17 @@
+D:\BMW\BMW\BMW.Servise\bin\Debug\net6.0\BMW.Servise.deps.json
+D:\BMW\BMW\BMW.Servise\bin\Debug\net6.0\BMW.Servise.dll
+D:\BMW\BMW\BMW.Servise\bin\Debug\net6.0\BMW.Servise.pdb
+D:\BMW\BMW\BMW.Servise\bin\Debug\net6.0\BMW.Dal.dll
+D:\BMW\BMW\BMW.Servise\bin\Debug\net6.0\BMW.Domain.dll
+D:\BMW\BMW\BMW.Servise\bin\Debug\net6.0\BMW.Dal.pdb
+D:\BMW\BMW\BMW.Servise\bin\Debug\net6.0\BMW.Domain.pdb
+D:\BMW\BMW\BMW.Servise\obj\Debug\net6.0\BMW.Servise.csproj.AssemblyReference.cache
+D:\BMW\BMW\BMW.Servise\obj\Debug\net6.0\BMW.Servise.GeneratedMSBuildEditorConfig.editorconfig
+D:\BMW\BMW\BMW.Servise\obj\Debug\net6.0\BMW.Servise.AssemblyInfoInputs.cache
+D:\BMW\BMW\BMW.Servise\obj\Debug\net6.0\BMW.Servise.AssemblyInfo.cs
+D:\BMW\BMW\BMW.Servise\obj\Debug\net6.0\BMW.Servise.csproj.CoreCompileInputs.cache
+D:\BMW\BMW\BMW.Servise\obj\Debug\net6.0\BMW.Servise.csproj.CopyComplete
+D:\BMW\BMW\BMW.Servise\obj\Debug\net6.0\BMW.Servise.dll
+D:\BMW\BMW\BMW.Servise\obj\Debug\net6.0\refint\BMW.Servise.dll
+D:\BMW\BMW\BMW.Servise\obj\Debug\net6.0\BMW.Servise.pdb
+D:\BMW\BMW\BMW.Servise\obj\Debug\net6.0\ref\BMW.Servise.dll

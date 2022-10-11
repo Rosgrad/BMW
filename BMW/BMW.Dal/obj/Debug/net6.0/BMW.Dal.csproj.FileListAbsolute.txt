@@ -1,0 +1,15 @@
+D:\BMW\BMW\BMW.Dal\bin\Debug\net6.0\BMW.Dal.deps.json
+D:\BMW\BMW\BMW.Dal\bin\Debug\net6.0\BMW.Dal.dll
+D:\BMW\BMW\BMW.Dal\bin\Debug\net6.0\BMW.Dal.pdb
+D:\BMW\BMW\BMW.Dal\bin\Debug\net6.0\BMW.Domain.dll
+D:\BMW\BMW\BMW.Dal\bin\Debug\net6.0\BMW.Domain.pdb
+D:\BMW\BMW\BMW.Dal\obj\Debug\net6.0\BMW.Dal.csproj.AssemblyReference.cache
+D:\BMW\BMW\BMW.Dal\obj\Debug\net6.0\BMW.Dal.GeneratedMSBuildEditorConfig.editorconfig
+D:\BMW\BMW\BMW.Dal\obj\Debug\net6.0\BMW.Dal.AssemblyInfoInputs.cache
+D:\BMW\BMW\BMW.Dal\obj\Debug\net6.0\BMW.Dal.AssemblyInfo.cs
+D:\BMW\BMW\BMW.Dal\obj\Debug\net6.0\BMW.Dal.csproj.CoreCompileInputs.cache
+D:\BMW\BMW\BMW.Dal\obj\Debug\net6.0\BMW.Dal.csproj.CopyComplete
+D:\BMW\BMW\BMW.Dal\obj\Debug\net6.0\BMW.Dal.dll
+D:\BMW\BMW\BMW.Dal\obj\Debug\net6.0\refint\BMW.Dal.dll
+D:\BMW\BMW\BMW.Dal\obj\Debug\net6.0\BMW.Dal.pdb
+D:\BMW\BMW\BMW.Dal\obj\Debug\net6.0\ref\BMW.Dal.dll

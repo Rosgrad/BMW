@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entity\" />
+    <PackageReference Include="bootstrap" Version="5.2.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="6.0.4" />
   </ItemGroup>
 
 </Project>

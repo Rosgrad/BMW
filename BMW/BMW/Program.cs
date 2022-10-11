@@ -1,8 +1,15 @@
+using BMW;
+using BMW.Dal;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+var conection = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<BMWDbContext>(options => options.UseMySQL(conection));
+builder.Services.InitializeRepositories();
+builder.Services.InitializeServices();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

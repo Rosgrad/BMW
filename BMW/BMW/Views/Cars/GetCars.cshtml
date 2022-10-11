@@ -1,0 +1,16 @@
+﻿@model List<BMW.Domain.Entity.Cars>
+
+
+@{
+     ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+@foreach(var mad in Model)
+{
+    <p>@mad.Name</p>
+    <p>@mad.Description</p>
+    <p>@mad.Price</p>
+    <p>@mad.TypeCar</p>
+    <p>@mad.DataCreate</p>
+}
