@@ -1,4 +1,5 @@
-﻿using BMW.Servise.Interfaces;
+﻿using BMW.Domain.ViewModel.Cars;
+using BMW.Servise.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BMW.Controllers
@@ -22,5 +23,33 @@ namespace BMW.Controllers
             }
             return RedirectToAction("Error");
         }
+        [HttpGet]
+        public async Task<IActionResult> Save(int id)
+        {
+            if (id == 0)
+                return PartialView();
+            var response = await _carService.GetCar(id);
+            if(response.StatusCode== BMW.Domain.Enum.StatusCode.OK)
+            {
+                return PartialView(response.Data);
+            }
+            ModelState.AddModelError("", response.Descriprion);
+            return PartialView();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Save(CarsViewModel model)
+        {
+            ModelState.Remove("DateCreate");
+            if (ModelState.IsValid)
+            {
+
+                {
+                    await _carService.EditCars(model.Id, model);
+                }
+                return RedirectToAction("GetCars");
+            }
+            return View();
+        }
+
     }
 }

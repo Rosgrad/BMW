@@ -4,6 +4,7 @@ using BMW.Domain.Entity;
 using BMW.Domain.Enum;
 using BMW.Domain.ViewModel.Cars;
 using BMW.Servise.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,17 +22,36 @@ namespace BMW.Servise.Implementatios
             _carRepository = carRepository;
         }
 
-        public Task<IBaseResponse<Cars>> CreateCar(CarsViewModel car)
+        public async Task<IBaseResponse<Cars>> CreateCar(CarsViewModel model)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var car = new Cars()
+                {
+                    Name = model.Name,
+                    Description = model.Description,
+                    DataCreate=DateTime.Now,
+                    TypeCar = (TypeCar)Convert.ToInt32(model.TypeCar),
+                    Price = model.Price
+                };
+                await _carRepository.Create(car);
+                return new BaseResponse<Cars>()
+                {
+                    StatusCode = StatusCode.OK,
+                    Data = car
+                };
+            }
+            catch(Exception ex)
+            {
+                return new BaseResponse<Cars>()
+                {
+                    Descriprion = $"[Create] : {ex.Message}",
+                    StatusCode = StatusCode.InternalServerError
+                };
+            }
         }
 
         public Task<IBaseResponse<bool>> DeleteCar(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<IBaseResponse<Cars>> EditMedicines(int id, CarsViewModel model)
         {
             throw new NotImplementedException();
         }
@@ -74,5 +94,39 @@ namespace BMW.Servise.Implementatios
         {
             throw new NotImplementedException();
         }
+
+        public async Task<IBaseResponse<Cars>> EditCars(int id, CarsViewModel model)
+        {
+            var baseResponse = new BaseResponse<Cars>();
+            try
+            {
+                var car = await _carRepository.GetAll().FirstOrDefaultAsync(x=> x.Id == id);    
+                if (car== null)
+                {
+                    return new BaseResponse<Cars>()
+                    {
+                        Descriprion = "Cars not found",
+                        StatusCode = StatusCode.CarNotFound
+                    };
+                }
+                car.Description = car.Description;
+                car.Price= car.Price;
+                car.DataCreate =DateTime.Now;
+                car.Name = car.Name;
+
+                await _carRepository.Update(car);
+                return baseResponse;
+            }
+            catch (Exception ex)
+            {
+                return new BaseResponse<Cars>()
+                {
+                    Descriprion = $"[Edit]:{ex.Message}",
+                    StatusCode = StatusCode.InternalServerError
+                };
+            }
+        }
+
+
     }
 }

@@ -16,7 +16,7 @@ namespace BMW.Servise.Interfaces
 
         Task<IBaseResponse<Cars>> GetCarsName(string name);
 
-        Task<IBaseResponse<Cars>> EditMedicines(int id, CarsViewModel model);
+        Task<IBaseResponse<Cars>> EditCars(int id, CarsViewModel model);
 
     }
 }
