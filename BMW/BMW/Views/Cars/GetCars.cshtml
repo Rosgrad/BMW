@@ -8,9 +8,14 @@
 
 @foreach(var mad in Model)
 {
-    <p>@mad.Name</p>
-    <p>@mad.Description</p>
-    <p>@mad.Price</p>
-    <p>@mad.TypeCar</p>
-    <p>@mad.DataCreate</p>
+
+    <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">@mad.Name</h5>
+    <p class="card-text">@mad.Description</p>
+    <p class="card-text">@mad.Price</p>
+    <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+  </div>
+</div>
 }

@@ -42,7 +42,11 @@ namespace BMW.Controllers
             ModelState.Remove("DateCreate");
             if (ModelState.IsValid)
             {
-
+                if(model.Id==0)
+                {
+                    await _carService.CreateCar(model);
+                }
+                else
                 {
                     await _carService.EditCars(model.Id, model);
                 }

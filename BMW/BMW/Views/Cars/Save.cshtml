@@ -1,4 +1,5 @@
-﻿@model BMW.Domain.Entity.Cars
+﻿
+@model BMW.Domain.Entity.Cars
 @{
     ViewBag.Title = "CreateCars";
 }
@@ -10,7 +11,10 @@
 
             <div class="card-body">
                 <form asp-action="Save" enctype="multipart/form-data">
-                    <input asp-for="Id" hidden />
+                      <div class="form-group">
+                        <label asp-for="Id"></label>
+                        <input asp-for="Id" classa="form-control" type="text">
+                    </div>
                     <div asp-validation-summary="All" style="font-size:23px; font-family:Impact, serif" class="text-danger text-center"></div>
                     <div class="form-group">
                         <label asp-for="Name"></label>
