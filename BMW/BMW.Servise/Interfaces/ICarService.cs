@@ -6,6 +6,7 @@ namespace BMW.Servise.Interfaces
 {
     public interface ICarService
     {
+        BaseResponse<Dictionary<int, string>> GetTypes();
         IBaseResponse<List<Cars>> GetCars();
 
         Task<IBaseResponse<List<CarsViewModel>>> GetCar(int id);

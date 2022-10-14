@@ -16,4 +16,8 @@
     <ProjectReference Include="..\BMW.Servise\BMW.Servise.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Account\" />
+  </ItemGroup>
+
 </Project>

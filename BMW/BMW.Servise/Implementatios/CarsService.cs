@@ -2,6 +2,7 @@
 using BMW.Domain.BaseResponse;
 using BMW.Domain.Entity;
 using BMW.Domain.Enum;
+using BMW.Domain.Extensions;
 using BMW.Domain.ViewModel.Cars;
 using BMW.Servise.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -127,6 +128,27 @@ namespace BMW.Servise.Implementatios
             }
         }
 
+        public BaseResponse<Dictionary<int, string>> GetTypes()
+        {
+            try
+            {
+                var types = ((TypeCar[])Enum.GetValues(typeof(TypeCar)))
+                    .ToDictionary(k => (int)k, t => t.GetDisplayName());
 
+                return new BaseResponse<Dictionary<int, string>>()
+                {
+                    Data = types,
+                    StatusCode = StatusCode.OK
+                };
+            }
+            catch (Exception ex)
+            {
+                return new BaseResponse<Dictionary<int, string>>()
+                {
+                    Descriprion = ex.Message,
+                    StatusCode = StatusCode.InternalServerError
+                };
+            }
+        }
     }
 }
