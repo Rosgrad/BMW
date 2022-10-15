@@ -16,7 +16,11 @@ namespace BMW.Dal
         {
             Database.EnsureCreated();
         }
+
         public DbSet<Cars> Cars { get; set; }
+
+        public DbSet<Profile> Profiles { get; set; }
+
         public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -38,10 +42,26 @@ namespace BMW.Dal
                 builder.Property(x => x.Password).IsRequired();
                 builder.Property(x => x.Name).HasMaxLength(100).IsRequired();
 
-                //builder.HasOne(x => x.Profile)
-                //    .WithOne(x => x.User)
-                //    .HasPrincipalKey<User>(x => x.Id)
-                //    .OnDelete(DeleteBehavior.Cascade);
+                builder.HasOne(x => x.Profile)
+                    .WithOne(x => x.User)
+                    .HasPrincipalKey<User>(x => x.Id)
+                    .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            modelBuilder.Entity<Profile>(builder =>
+            {
+                builder.ToTable("Profiles").HasKey(x => x.Id);
+
+                builder.Property(x => x.Id).ValueGeneratedOnAdd();
+
+                builder.HasData(new Profile()
+                {
+                    Id = 1,
+                    UserId = 1
+                });
+
+                builder.Property(x => x.Age);
+                builder.Property(x => x.Address).HasMaxLength(200).IsRequired(false);
             });
         }
     }

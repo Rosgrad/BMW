@@ -17,6 +17,7 @@ namespace BMW.Domain.Entity
 
         public Role Role { get; set; }
 
-        
+        public Profile Profile { get; set; }
+
     }
 }

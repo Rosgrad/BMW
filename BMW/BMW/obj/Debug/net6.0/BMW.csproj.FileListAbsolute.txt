@@ -55,3 +55,6 @@ D:\BMW\BMW\BMW\bin\Debug\net6.0\BMW.Servise.pdb
 D:\BMW\BMW\BMW\bin\Debug\net6.0\BMW.Dal.pdb
 D:\BMW\BMW\BMW\bin\Debug\net6.0\BMW.Domain.pdb
 D:\BMW\BMW\BMW\obj\Debug\net6.0\BMW.csproj.CopyComplete
+D:\BMW\BMW\BMW\bin\Debug\net6.0\NLog.dll
+D:\BMW\BMW\BMW\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+D:\BMW\BMW\BMW\bin\Debug\net6.0\NLog.Web.AspNetCore.dll
